@@ -1,0 +1,148 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(135deg, #25435a, #84909a, #647383, #2f3e50, #1a2a3a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    background: transparent;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Menu de navegação */
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(120deg, #5b646d, #425b6d, #6d757c);
+    padding: 15px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.pages a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Galeria de imagens */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Imagens */
+img {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 4 / 3; /* Mantém todas no mesmo formato */
+    object-fit: cover;    /* Corta excesso e preenche proporcionalmente */
+    border-radius: 25%;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Textos */
+p {
+    margin: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Seção */
+section {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .pages {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pages a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .pages a {
+        padding: 8px 12px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+}

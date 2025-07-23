@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(135deg, #25435a, #84909a, #647383, #2f3e50, #1a2a3a);
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Menu de navegação */
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(120deg, #5b646d, #425b6d, #6d757c);
+    padding: 15px 10px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.pages a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Imagens */
+img {
+    border-radius: 25%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Texto "sobre mim" */
+.sobremim {
+    text-align: justify;
+    max-width: 800px;
+    padding: 20px;
+    transition: transform 1s ease, color 0.5s ease;
+    box-sizing: border-box;
+}
+
+.sobremim:hover {
+    transform: scale(1.05);
+    color: #f0f0f0;
+}
+
+/* Rodapé */
+footer {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+/* Parágrafos */
+p {
+    margin: 5px;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .pages {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pages a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .sobremim {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .pages a {
+        padding: 8px 12px;
+    }
+
+    .sobremim {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+}

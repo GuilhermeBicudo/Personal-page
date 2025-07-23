@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(135deg, #25435a, #84909a, #647383, #2f3e50, #1a2a3a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+  }
+
+  /* Redes sociais */
+  .redessociais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 20px;
+  }
+
+  .redessociais a img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .redessociais a img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Menu de navegação */
+  .pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 15px 10px;
+    background: linear-gradient(120deg, #5b646d, #425b6d, #6d757c);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .pages a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .pages a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+  /* Seções */
+  section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+
+    .pages {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pages a {
+      width: 90%;
+      max-width: 300px;
+    }
+
+    section {
+      padding: 15px;
+    }
+
+    .redessociais {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .redessociais a img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .redessociais a img {
+      width: 35px;
+      height: 35px;
+    }
+  }
