@@ -16,4 +16,4 @@ Criar uma plataforma digital que represente minha identidade, permitindo que vis
 
 ## 📎 Como visualizar
 
-Você pode assistir ao vídeo demonstrativo do projeto diretamente pelo meu [LinkedIn](https://www.linkedin.com/in/guilherme-de-andrade-bicudo-5637ab288/recent-activity/all/), onde compartilho detalhes sobre o desenvolvimento, funcionalidades e propósito da página.
+Você pode assistir ao vídeo demonstrativo do projeto diretamente pelo meu [LinkedIn](https://lnkd.in/p/dfA6yzFi), onde compartilho detalhes sobre o desenvolvimento, funcionalidades e propósito da página.
